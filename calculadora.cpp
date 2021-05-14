@@ -10,9 +10,9 @@ int multiplo;
 int menu;
 int main()
 {	
-	cout << "** ¡Hola! Este es un programa para hacer operaciones binarias con números naturales **" << endl << endl;		
-	cout <<  "Ingrese 0 en cualquier momento para volver al menú." << endl << endl ; 	 /* Menú del programa */
-
+	cout << " ** ¡Hola! Este es un programa para hacer operaciones binarias con números naturales **" << endl << endl;		
+	cout <<  " ** Ingrese 0 en cualquier momento para volver al menú. **" << endl; 	 /* Menú del programa */
+	cout << endl << " ** Menú ** " << endl;
 	do	
 	{
 	cout << endl << " 1- Suma." << endl << " 2- Resta." << endl << " 3- Multiplicación." << endl << " 4- División." << endl << " 0- Salir." << endl;
@@ -59,13 +59,19 @@ int main()
 
 					cin >> op2;
 
-					if (op2 == 0 || op2 > op1) break;
-
+					if (op2 == 0 || op2 > op1)
+					{
+					 	cout << endl << " ** No trabajamos con números negativos ** " << endl << endl;
+					}
+					
+					else
+					{
 						for ( diferencia = 0 ; (diferencia + op2) < op1 ; diferencia ++ )	/* Realiza la operación de resta sumando sucesivamente */
 						{
 						}
 
 					cout << endl << op1 << " - " << op2 << " = " << diferencia << endl << endl;
+					}
 				}
 
 				break;
@@ -132,6 +138,12 @@ int main()
 					cout <<  " = " << resultado ;						/* Muestra el resultado y el resto */
 					cout << "    Resto : " << resto << endl;
 				}
+
+				break;
+
+				default:
+
+				cout << " ** ** ** ** " << endl;
 
 				break;
 		}
