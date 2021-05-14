@@ -1,4 +1,4 @@
-/* Programa para dividir números enteros utilizando restas sucesivas */
+/* Programa que realiza operaciones utilizando solo sumas */
 
 #include<iostream>
 
