@@ -23,7 +23,7 @@ int main()
 			case 1:
 				op1=op2=1;
 
-				while ( op1 > 0 && op2 > 0 ) 
+				while ( op1 > 0 && op2 > 0 )			/* Ejecuta el bloque de instrucciones si los dos operandos son mayores a 0 */ 
 				{
 				cout << " Ingrese el primer operando: " ;
 
@@ -37,7 +37,7 @@ int main()
 
 				if (op2 == 0) break;
 
-				resultado = op1 + op2;
+				resultado = op1 + op2;				/* Realiza la operación y la guarda en la variable resultado */
 
 				cout << endl << op1 << " + " << op2 << " = " << resultado << endl << endl;
 				}
@@ -70,7 +70,6 @@ int main()
 
 				break;
 
-
 			case 3:
 				op1=op2=1;
 
@@ -90,7 +89,7 @@ int main()
 
 						multiplo = 0;
 
-						for ( int x = 0 ; x < op2 ; x ++ )	/* Realiza la operación de resta sumando sucesivamente */
+						for ( int x = 0 ; x < op2 ; x ++ )	/* Realiza la operación de multiplicación sumando el primer operando a si mismo op2 veces*/
 						{
 							multiplo = multiplo + op1;
 						}
