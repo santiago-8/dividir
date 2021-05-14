@@ -23,7 +23,7 @@ int main()
 			case 1:
 				op1=op2=1;
 
-				while ( op1 > 0 && op2 > 0 )			/* Ejecuta el bloque de instrucciones si los dos operandos son mayores a 0 */ 
+				while ( op1 > 0 && op2 > 0 )				/* Ejecuta el bloque de instrucciones si los dos operandos son mayores a 0 */ 
 				{
 				cout << " Ingrese el primer operando: " ;
 
@@ -37,7 +37,7 @@ int main()
 
 				if (op2 == 0) break;
 
-				resultado = op1 + op2;				/* Realiza la operación y la guarda en la variable resultado */
+				resultado = op1 + op2;					/* Realiza la operación y la guarda en la variable resultado */
 
 				cout << endl << op1 << " + " << op2 << " = " << resultado << endl << endl;
 				}
@@ -66,8 +66,8 @@ int main()
 					
 					else
 					{
-						for ( diferencia = 0 ; (diferencia + op2) < op1 ; diferencia ++ )	/* Realiza la operación de resta sumando sucesivamente */
-						{
+						for ( diferencia = 0 ; (diferencia + op2) < op1 ; diferencia ++ )	
+						{					/* Realiza la operación de resta sumando sucesivamente */
 						}
 
 					cout << endl << op1 << " - " << op2 << " = " << diferencia << endl << endl;
@@ -108,19 +108,19 @@ int main()
 			case 4:
 				dividendo=divisor=1;
 
-				while ( dividendo > 0 && divisor > 0 )					/* Si el dividendo y el divisor son mayores a 0,ejecuta el bloque de instrucciones */
+				while ( dividendo > 0 && divisor > 0 )			/* Si el dividendo y el divisor son mayores a 0,ejecuta el bloque de instrucciones */
 				{	
 					cout << endl << "Ingrese el dividendo: " ;
 
 					cin >> dividendo;
 
-					if (dividendo < 1 ) break;						/* Si se ingresa 0 o menor como dividendo , corta el bucle y sale del programa */
+					if (dividendo < 1 ) break;			/* Si se ingresa 0 o menor como dividendo , corta el bucle y sale del programa */
 
 					cout << endl << "Ingrese el divisor: " ;
 
 					cin >> divisor;
 
-					if (divisor < 1 ) break;						/* Si se ingresa 0 o menor como divisor, corta el bucle y sale del programa */
+					if (divisor < 1 ) break;			/* Si se ingresa 0 o menor como divisor, corta el bucle y sale del programa */
 
 					cout << endl << dividendo << " / " << divisor;
 
@@ -128,14 +128,14 @@ int main()
 
 					for ( resultado = 0 ; resto >= divisor; resultado++)	/* Realiza la operación de división restando sucesivamente */
 					{
-						for ( diferencia = 0 ; (diferencia + divisor) < resto ; diferencia ++ )	/* Realiza la operación de resta sumando sucesivamente */
+						for ( diferencia = 0 ; (diferencia + divisor) < resto ; diferencia ++ )	
 						{
 						}
 
 						resto = diferencia;
 					}
 
-					cout <<  " = " << resultado ;						/* Muestra el resultado y el resto */
+					cout <<  " = " << resultado ;			/* Muestra el resultado y el resto */
 					cout << "    Resto : " << resto << endl;
 				}
 
