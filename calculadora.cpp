@@ -13,7 +13,7 @@ int main()
 	cout << " ** ¡Hola! Este es un programa para hacer operaciones binarias con números naturales **" << endl << endl;		
 	cout <<  " ** Ingrese 0 en cualquier momento para salir. **" << endl << endl; 		 /* Menú del programa */
 	cout << " ** Operaciones: + - * / ** " << endl << endl;
-	cout << " Ingresar <operando><operacion><operando> Ejemplo: 27+3" << endl << endl;
+	cout << " Ingresar <operando><operacion><operando> y presionar Enter. Ejemplo: 27+3" << endl << endl;
 	do	
 	{
 				cin >> op1;							/* Se ingresa el primer número, la operación y el segundo número */
